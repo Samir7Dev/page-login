@@ -1,0 +1,109 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1E90FF, #6A5ACD);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.login-box h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.login-box p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #6A5ACD;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #F0F8FF;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.forgot-password:hover {
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-box h1 {
+        font-size: 2em;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+
+    .login-btn {
+        padding: 12px;
+    }
+}
